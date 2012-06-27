@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+ * Copyright (C) 2012 The Serval Project
+ *
+ * This file is part of the Serval Maps Bridge Template
+ *
+ * Serval Maps Bridge Template Software is free software; you can redistribute 
+ * it and/or modify it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This source code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this source code; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.servalproject.maps.bridge"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8"/>
+    
+    <!-- permission required to access data from Serval Maps -->
+    <uses-permission android:name="org.servalproject.maps.provider.READ_ITEMS"/>
+    
+    <!-- permissions required for upload -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/system_application_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/system_application_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".BatchActivity"></activity>
+        <activity android:name=".ViewLogActivity"></activity>
+        <provider android:authorities="org.servalproject.maps.bridge.provider.items" 
+            android:name=".provider.BridgeItems" 
+            android:enabled="true" 
+            android:exported="false">
+        </provider>
+        <receiver 
+            android:name=".AutoUploadReceiver" 
+            android:enabled="true" 
+            android:permission="org.servalproject.maps.provider.READ_ITEMS" android:exported="true">
+            <intent-filter>
+                <action android:name="org.servalproject.maps.NEW_POI_RECORD"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

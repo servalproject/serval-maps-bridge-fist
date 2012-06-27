@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+ * Copyright (C) 2012 The Serval Project
+ *
+ * This file is part of the Serval Maps Bridge Template
+ *
+ * Serval Maps Bridge Template Software is free software; you can redistribute 
+ * it and/or modify it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This source code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this source code; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+ -->
+<resources>
+    
+    <!-- main ui elements -->
+    <string name="main_activity_ui_lbl_title">Serval Maps Bridge Template</string>
+    <string name="main_activity_ui_lbl_description">The Serval Maps Bridge template application demonstrates how it is possible to bridge Serval Maps with another application / service.\n\nThis version retrieves Point of Interest information, converts the data into a JSON format, and then uploads this data to a website.</string>
+    
+    <string name="main_activity_ui_dialog_no_email">A default email client could not be found, please send any feedback you may have to %1$s</string>
+    <string name="main_activity_ui_dialog_reset_log">Are you sure you want to delete all activity log entries?</string>
+    <string name="main_activity_ui_dialog_reset_log_complete">All activity log entries have been deleted</string>
+    
+    <string name="main_activity_ui_btn_settings">Settings</string>
+    <string name="main_activity_ui_btn_batch">Batch Upload</string>
+    <string name="main_activity_ui_btn_log">Activity Log</string>
+    <string name="main_activity_ui_btn_reset_log">Reset Log</string>
+    <string name="main_activity_ui_btn_contact">Contact</string>
+    <string name="main_activity_ui_btn_close">Close</string>
+    
+    <!-- batch upload ui elements -->
+    <string name="batch_activity_ui_lbl_title">Batch Upload POIs</string>
+    <string name="batch_activity_ui_lbl_description">Use the button below to batch upload any new Point of Interest data in the Serval Maps database</string>
+    
+    <string name="batch_activity_ui_btn_upload">Batch Upload</string>
+    <string name="batch_activity_ui_btn_close">Close</string>
+    
+    <string name="batch_activity_ui_dialog_no_upload_url">There is no upload URL configured, please fix this setting and then try again</string>
+    <string name="batch_activity_ui_dialog_invalid_upload_url">The configured upload URL is invalid, please fix this setting and then try again</string>
+    <string name="batch_activity_ui_dialog_nothing_to_do">There are no new POI records that need to be uploaded</string>
+    <string name="batch_activity_ui_dialog_upload_complete">All new POI records have been uploaded</string>
+    <string name="batch_activity_ui_dialog_upload_failed">The upload of POI data failed, please try again later</string>
+    <string name="batch_activity_ui_dialog_no_internet">A valid Internet connection is required before trying to upload data</string>
+    
+    <string name="batch_activity_ui_status_json_prepare">Preparing JSON Data&#8230;</string>
+    <string name="batch_activity_ui_status_json_upload">Uploading JSON Data&#8230;</string>
+    
+    <!-- view upload log elements -->
+    <string name="view_log_ui_lbl_heading">View Upload Log</string>
+    
+    <string name="view_log_ui_entry_status_lbl">Upload Status</string>
+    <string name="view_log_ui_entry_status_last_updated_lbl">Last Updated</string>
+    
+    <string name="view_log_ui_toast_no_data">There are no log entries to view at this time</string>
+    
+    <!-- settings ui elements -->
+    <string name="settings_activity_ui_dialog_missing_url">You must supply a URL to be used for the upload of data</string>
+    <string name="settings_activity_ui_dialog_invalid_url">The URL that was entered is invalid, please try again</string>
+    
+    <!-- preferences strings -->
+    <string name="preferences_upload_url_dialog_title">JSON Upload URL</string>
+    <string name="preferences_upload_url_title">JSON Upload URL</string>
+    <string name="preferences_upload_url_summary">The URL used to upload the POI JSON data</string>
+    
+    <string name="preferences_auto_upload_title">Auto Upload New POIs</string>
+    <string name="preferences_auto_upload_summary">Automatically Upload new POI as they are received</string>
+
+    <!-- system strings -->
+    <string name="system_application_name">ServalMapsBridge</string>
+    
+    <string name="system_upload_status_upload_pending">Upload Pending</string>
+    <string name="system_upload_status_upload_sucess">Uploaded Successfully</string>
+    <string name="system_upload_status_upload_failed">Upload Failed</string>
+    <string name="system_upload_status_invalid_json">Invalid JSON, upload not possible</string>
+    
+    <string name="system_contact_email">maps@servalproject.org</string>
+    <string name="system_contact_email_subject">Serval Maps Bridge Template</string>
+    <string name="system_contact_email_chooser">Send feedback email&#8230;</string>
+    
+
+</resources>
