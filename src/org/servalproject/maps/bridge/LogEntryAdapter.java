@@ -1,9 +1,10 @@
 package org.servalproject.maps.bridge;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.text.DateFormat;
 
+import org.servalproject.maps.bridge.fist.R;
 import org.servalproject.maps.bridge.provider.LogContract;
 
 import android.content.Context;

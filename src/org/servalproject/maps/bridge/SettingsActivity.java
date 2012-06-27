@@ -19,6 +19,8 @@
  */
 package org.servalproject.maps.bridge;
 
+import org.servalproject.maps.bridge.fist.R;
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;

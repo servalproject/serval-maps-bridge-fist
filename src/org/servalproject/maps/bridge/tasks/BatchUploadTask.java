@@ -22,7 +22,7 @@ package org.servalproject.maps.bridge.tasks;
 import org.json.JSONException;
 import org.servalproject.maps.PointsOfInterestContract;
 import org.servalproject.maps.bridge.BatchActivity;
-import org.servalproject.maps.bridge.R;
+import org.servalproject.maps.bridge.fist.R;
 import org.servalproject.maps.bridge.http.BasicHttpUploader;
 import org.servalproject.maps.bridge.json.BasicJsonMaker;
 import org.servalproject.maps.bridge.provider.LogContract;

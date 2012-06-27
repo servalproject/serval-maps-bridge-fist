@@ -37,7 +37,7 @@ public class BridgeItems extends ContentProvider {
 	/**
 	 * authority string for the content provider
 	 */
-	public static final String AUTHORITY = "org.servalproject.maps.bridge.provider.items";
+	public static final String AUTHORITY = "org.servalproject.maps.bridge.fist.provider.items";
 	
 	// private class level constants
 	private static final UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);

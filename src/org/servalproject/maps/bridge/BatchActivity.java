@@ -22,6 +22,7 @@ package org.servalproject.maps.bridge;
 import java.util.Arrays;
 
 import org.servalproject.maps.PointsOfInterestContract;
+import org.servalproject.maps.bridge.fist.R;
 import org.servalproject.maps.bridge.http.HttpUtils;
 import org.servalproject.maps.bridge.provider.LogContract;
 import org.servalproject.maps.bridge.tasks.BatchUploadTask;

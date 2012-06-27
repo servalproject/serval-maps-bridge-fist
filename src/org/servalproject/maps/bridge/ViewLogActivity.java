@@ -19,6 +19,7 @@
  */
 package org.servalproject.maps.bridge;
 
+import org.servalproject.maps.bridge.fist.R;
 import org.servalproject.maps.bridge.provider.LogContract;
 
 import android.app.ListActivity;

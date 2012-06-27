@@ -21,7 +21,7 @@
  */
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.servalproject.maps.bridge"
+    package="org.servalproject.maps.bridge.fist"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -38,7 +38,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/system_application_name" >
         <activity
-            android:name=".MainActivity"
+            android:name="org.servalproject.maps.bridge.MainActivity"
             android:label="@string/system_application_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,16 +46,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity"></activity>
-        <activity android:name=".BatchActivity"></activity>
-        <activity android:name=".ViewLogActivity"></activity>
-        <provider android:authorities="org.servalproject.maps.bridge.provider.items" 
-            android:name=".provider.BridgeItems" 
+        <activity android:name="org.servalproject.maps.bridge.SettingsActivity"></activity>
+        <activity android:name="org.servalproject.maps.bridge.BatchActivity"></activity>
+        <activity android:name="org.servalproject.maps.bridge.ViewLogActivity"></activity>
+        <provider android:authorities="org.servalproject.maps.bridge.fist.provider.items" 
+            android:name="org.servalproject.maps.bridge.provider.BridgeItems" 
             android:enabled="true" 
             android:exported="false">
         </provider>
         <receiver 
-            android:name=".AutoUploadReceiver" 
+            android:name="org.servalproject.maps.bridge.AutoUploadReceiver" 
             android:enabled="true" 
             android:permission="org.servalproject.maps.provider.READ_ITEMS" android:exported="true">
             <intent-filter>
