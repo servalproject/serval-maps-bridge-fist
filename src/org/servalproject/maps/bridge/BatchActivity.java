@@ -105,7 +105,7 @@ public class BatchActivity extends Activity implements OnClickListener {
         	uploadButton.setEnabled(false);
         }else if(HttpUtils.isOnline(this) == false) {
         	showDialog(sNoInternetDialog);
-        	uploadButton.setEnabled(false);
+        	//uploadButton.setEnabled(false);
         }
     }
 

@@ -24,7 +24,7 @@ import org.servalproject.maps.PointsOfInterestContract;
 import org.servalproject.maps.bridge.BatchActivity;
 import org.servalproject.maps.bridge.fist.R;
 import org.servalproject.maps.bridge.http.BasicHttpUploader;
-import org.servalproject.maps.bridge.json.BasicJsonMaker;
+import org.servalproject.maps.bridge.json.FistJsonMaker;
 import org.servalproject.maps.bridge.provider.LogContract;
 
 import android.content.ContentResolver;
@@ -165,7 +165,7 @@ public class BatchUploadTask extends AsyncTask<Void, Integer, Void> {
 
 			// convert the data to JSON
 			try {
-				mJsonData = BasicJsonMaker.makePoiJson(mContentValues);
+				mJsonData = FistJsonMaker.makePoiJson(mContentValues);
 			} catch (JSONException e) {
 				Log.e(sTag, "unable to encode JSON data for '" + cursor.getString(cursor.getColumnIndex(PointsOfInterestContract.Table._ID)), e);
 				mJsonData = null;

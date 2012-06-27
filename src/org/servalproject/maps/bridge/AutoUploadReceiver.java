@@ -22,7 +22,7 @@ package org.servalproject.maps.bridge;
 import org.json.JSONException;
 import org.servalproject.maps.PointsOfInterestContract;
 import org.servalproject.maps.bridge.http.BasicHttpUploader;
-import org.servalproject.maps.bridge.json.BasicJsonMaker;
+import org.servalproject.maps.bridge.json.FistJsonMaker;
 import org.servalproject.maps.bridge.provider.LogContract;
 
 import android.content.BroadcastReceiver;
@@ -139,7 +139,7 @@ public class AutoUploadReceiver extends BroadcastReceiver {
 
 		// convert the data to JSON
 		try {
-			mJsonData = BasicJsonMaker.makePoiJson(mContentValues);
+			mJsonData = FistJsonMaker.makePoiJson(mContentValues);
 		} catch (JSONException e) {
 			Log.e(sTag, "unable to encode JSON data for '" + mCursor.getString(mCursor.getColumnIndex(PointsOfInterestContract.Table._ID)), e);
 			mJsonData = null;
